@@ -1,0 +1,30 @@
+# === Java ===
+*.class               # Compiled bytecode
+*.jar                 # Java archives
+*.war                 # Web archives
+*.log                 # Log files
+*.ctxt                # Java test context
+
+# === IDEs and Editors ===
+.vscode/              # VS Code settings
+.idea/                # IntelliJ IDEA
+*.iml                 # IntelliJ project module file
+.DS_Store             # macOS directory settings
+Thumbs.db             # Windows thumbnail cache
+
+# === Build Directories ===
+bin/                  # Build output
+build/                # Generic build directory
+out/                  # IntelliJ or other tools
+
+# === OS-generated ===
+*.swp                 # Vim swap files
+*.tmp                 # Temp files
+*~                   # Editor backups
+
+# === Environment or Local Tools ===
+.env                  # Environment variables (if you add any)
+.gradle               # Gradle build cache
+
+
+src
