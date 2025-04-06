@@ -1,3 +1,4 @@
+
 # 🏦 BankLedger
 
 A clean, object-oriented Java banking simulator that mirrors real-world financial behavior through **depositing, withdrawing, and earning interest**. Designed for clarity, modularity, and professional demonstration.
@@ -7,7 +8,7 @@ A clean, object-oriented Java banking simulator that mirrors real-world financia
 ## 📌 Overview
 
 - **Author:** Omar Hernandez
-- **Date:** December 8th, 2024
+- **Date:** December 8th, 2023
 - **Language:** Java 17 (Maven-based project)
 
 BankLedger simulates **basic checking and savings accounts**, showcasing practical software engineering techniques such as:
@@ -112,16 +113,17 @@ Withdrew: $125.0
 
 Account Owner: Jordan Engineer
 Account Number: 2002
-Account Balance: $3076.22
+Account Balance: $3103.28
 Interest Rate: 1.15%
-Total Interest Earned: $39.22
+Total Interest Earned: $35.28
 
 Transaction History:
 Account created with balance: $1328.0
 Deposited: $881.0
 Withdrew: $341.0
 Deposited: $1200.0
-Interest credited: $39.22
+Deposited: $35.282
+Interest credited: $35.28
 ```
 
 ---
@@ -130,11 +132,11 @@ Interest credited: $39.22
 
 Basic tests are written in `BankLedgerTest.java` using **JUnit 5** to validate:
 
-- Valid deposits and withdrawals
-- Proper interest calculation
-- Handling of invalid or edge-case transactions
+- ✅ Valid deposits and withdrawals
+- ✅ Proper interest calculation
+- ✅ Handling of invalid or edge-case transactions
 
-Run tests with:
+### ▶️ Run Tests
 
 ```bash
 mvn test
