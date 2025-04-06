@@ -15,6 +15,7 @@ public class BankLedgerTest {
     /**
      * Sets up test objects before each test.
      */
+    @SuppressWarnings("unused")
     @BeforeEach
     void setup() {
         testAccount = new Account("Test User", 12345, 1000.00);
