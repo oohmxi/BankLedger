@@ -26,7 +26,7 @@
      public Savings(String accountOwnerName, int accountNumber, double accountBalance, double interestRate) {
          super(accountOwnerName, accountNumber, accountBalance);
          this.interestRate = interestRate;
-         this.totalInterestEarned = 0;
+         this.totalInterestEarned = 0.0;
      }
  
      public double getInterestRate() {
@@ -61,9 +61,9 @@
  
      @Override
      public String toString() {
-         return super.toString() +
-                "\nInterest Rate: " + String.format("%.2f", interestRate * 100) + "%" +
-                "\nTotal Interest Earned: $" + String.format("%.2f", totalInterestEarned);
+         return super.toString()
+                 + "\nInterest Rate: " + String.format("%.2f", interestRate * 100) + "%"
+                 + "\nTotal Interest Earned: $" + String.format("%.2f", totalInterestEarned);
      }
  }
  

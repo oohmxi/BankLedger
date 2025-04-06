@@ -7,19 +7,6 @@
       "request": "launch",
       "mainClass": "com.omar.bankledger.Driver",
       "projectName": "bankledger"
-    },
-    {
-      "type": "java",
-      "name": "🧪 Run JUnit BankLedgerTest",
-      "request": "launch",
-      "mainClass": "org.junit.platform.console.ConsoleLauncher",
-      "args": [
-        "--class-path",
-        "${workspaceFolder}/target/classes;${workspaceFolder}/target/test-classes",
-        "--select-class=com.omar.bankledger.BankLedgerTest"
-      ],
-      "console": "integratedTerminal",
-      "projectName": "bankledger"
     }
   ]
 }

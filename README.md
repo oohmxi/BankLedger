@@ -1,5 +1,4 @@
-
-# 🏦 BankLedger
+### 🏦 BankLedger
 
 A clean, object-oriented Java banking simulator that mirrors real-world financial behavior through **depositing, withdrawing, and earning interest**. Designed for clarity, modularity, and professional demonstration.
 

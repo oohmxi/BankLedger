@@ -14,7 +14,7 @@
     </properties>
 
     <dependencies>
-        <!-- ✅ JUnit Jupiter API & Engine for Maven testing -->
+        <!-- JUnit Jupiter for unit testing -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
@@ -22,10 +22,10 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- ✅ JUnit ConsoleLauncher (for VS Code "Run and Debug" button) -->
+        <!-- JUnit Platform ConsoleLauncher (enables test execution via launch.json) -->
         <dependency>
             <groupId>org.junit.platform</groupId>
-            <artifactId>junit-platform-console</artifactId>
+            <artifactId>junit-platform-console-standalone</artifactId>
             <version>1.10.0</version>
             <scope>test</scope>
         </dependency>
@@ -33,7 +33,7 @@
 
     <build>
         <plugins>
-            <!-- ✅ JDK 17 compatible compiler plugin -->
+            <!-- Java 17 compiler configuration -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -43,7 +43,7 @@
                 </configuration>
             </plugin>
 
-            <!-- ✅ Plugin to run your Driver class via Maven -->
+            <!-- Maven Exec plugin for running main class -->
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>exec-maven-plugin</artifactId>
@@ -53,7 +53,7 @@
                 </configuration>
             </plugin>
 
-            <!-- ✅ Surefire plugin for Maven test execution -->
+            <!-- Maven Surefire plugin for test execution -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
