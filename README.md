@@ -10,7 +10,7 @@ A Java-based banking simulation project that demonstrates object-oriented progra
 - **Files:**
   - `Account.java` – Base account class
   - `Savings.java` – Inherits from `Account`, adds interest logic
-  - `OmarHernandezProgram1.java` – Main driver with transaction simulation
+  - `Driver.java` – Main driver with transaction simulation
 
 ## 💡 Features
 
@@ -21,6 +21,6 @@ A Java-based banking simulation project that demonstrates object-oriented progra
 ## 🧪 Compile & Run (Java 17)
 
 ```bash
-javac Account.java Savings.java OmarHernandezProgram1.java
-java OmarHernandezProgram1
+javac Account.java Savings.java Driver.java
+java Driver
 ```
