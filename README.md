@@ -7,7 +7,7 @@ A clean, object-oriented Java banking simulator that mirrors real-world financia
 ## 📌 Overview
 
 - **Author:** Omar Hernandez
-- **Date:** December 8th, 2023
+- **Date:** December 8th, 2024
 - **Language:** Java 17 (Maven-based project)
 
 BankLedger simulates **basic checking and savings accounts**, showcasing practical software engineering techniques such as:
