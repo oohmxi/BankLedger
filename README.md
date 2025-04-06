@@ -1,103 +1,178 @@
 # 🏦 BankLedger
 
-A Java-based banking simulation project that demonstrates object-oriented programming principles such as encapsulation, inheritance, and polymorphism.
+A clean, object-oriented Java banking simulator that mirrors real-world financial behavior through **depositing, withdrawing, and earning interest**. Designed for clarity, modularity, and professional demonstration.
 
-## 📌 Project Info
+---
+
+## 📌 Overview
 
 - **Author:** Omar Hernandez
-- **Date:** December 8th, 2024
-- **Language:** Java 17
-- **Files:**
-  - `Account.java` – Base account class
-  - `Savings.java` – Inherits from `Account`, adds interest logic
-  - `Driver.java` – Main driver with transaction simulation
+- **Date:** December 8th, 2023
+- **Language:** Java 17 (Maven-based project)
 
-## 💡 Features
+BankLedger simulates **basic checking and savings accounts**, showcasing practical software engineering techniques such as:
 
-- Modular class design using inheritance
-- Simulates deposits, withdrawals, and balance updates
-- Console input/output interaction
+- Encapsulation of financial data
+- Inheritance through a `Savings` account subclass
+- Transaction logging and balance tracking
 
+---
 
-## 📊 Class Diagram
+## 💸 Financial Analogy
 
-The project follows this object-oriented structure:
+Imagine two real clients at a bank:
+
+- **Alex Developer** has a standard checking account.
+- **Jordan Engineer** uses a savings account that earns interest.
+
+This program tracks their financial activities:
+
+- Deposits and withdrawals
+- Account summaries
+- Interest earned over time (only for savings)
+
+Think of it as **a digital ledger**, but built in Java.
+
+---
+
+## 💡 Core Features
+
+- ✅ **Modular OOP Design:** Separate classes for account types
+- ✅ **Live Ledger History:** Tracks every transaction
+- ✅ **Interest Engine:** Automatically computes & applies savings interest
+- ✅ **Readable CLI Output:** Clear summary and history for each user
+
+---
+
+## 📊 Architecture Diagram (UML)
 
 ```mermaid
 classDiagram
-    class BankAccount {
-        <<interface>>
-        +deposit(amount) void
-        +withdraw(amount) void
-        +getBalance() double
-    }
-  
     class Account {
-        -balance: double
+        -accountOwnerName: String
         -accountNumber: int
-        -owner: String
-        -transactionHistory: List
-        +Account(owner, accountNumber, initialBalance)
-        +deposit(amount) void
-        +withdraw(amount) void
-        +getBalance() double
-        +getAccountInfo() String
+        -accountBalance: double
+        -transactionHistory: List<String>
+        +deposit(amount): void
+        +withdraw(amount): void
+        +getTransactionHistory(): List<String>
     }
-  
+
     class Savings {
         -interestRate: double
         -totalInterestEarned: double
-        +Savings(owner, accountNumber, initialBalance, interestRate)
-        +addInterest() void
-        +getInterestRate() double
-        +getTotalInterestEarned() double
+        +computeInterest(): double
+        +addInterest(): void
     }
-  
+
     class Driver {
-        +main(args) void
+        +main(args: String[]): void
     }
-  
-    BankAccount <|.. Account : implements
-    Account <|-- Savings : extends
-    Driver ..> Account : uses
-    Driver ..> Savings : uses
+
+    Account <|-- Savings
+    Driver ..> Account
+    Driver ..> Savings
 ```
 
+---
 
+## 🧪 Compile & Run
 
-## 🧪 Compile & Run (Java 17)
+### ▶️ Run via Maven
 
 ```bash
-javac Account.java Savings.java Driver.java
-java Driver
+mvn compile
+mvn exec:java -Dexec.mainClass="com.omar.bankledger.Driver"
 ```
 
-## 🔎 Example Output
+### Or Run Manually (Java 17)
 
-```text
+```bash
+javac src/main/java/com/omar/bankledger/*.java
+java -cp src/main/java com.omar.bankledger.Driver
+```
+
+---
+
+## 🔍 Sample Output
+
+```
 === Final Account Summary ===
 
-Account Owner: Alice Customer  
-Account Number: 10001  
-Account Balance: $7258.83  
+Account Owner: Alex Developer
+Account Number: 1001
+Account Balance: $7258.83
 
-Transaction History:  
-Account created with balance: $6922.83  
-Deposited: $461.0  
-Withdrew: $125.0  
+Transaction History:
+Account created with balance: $6922.83
+Deposited: $461.0
+Withdrew: $125.0
 
 -----------------------------
 
-Account Owner: Bob Saver  
-Account Number: 10002  
-Account Balance: $3076.22  
-Interest Rate: 1.15%  
-Total Interest Earned: $39.22  
+Account Owner: Jordan Engineer
+Account Number: 2002
+Account Balance: $3076.22
+Interest Rate: 1.15%
+Total Interest Earned: $39.22
 
-Transaction History:  
-Account created with balance: $1328.0  
-Deposited: $881.0  
-Withdrew: $341.0  
-Deposited: $1200.0  
-Interest credited: $39.22  
+Transaction History:
+Account created with balance: $1328.0
+Deposited: $881.0
+Withdrew: $341.0
+Deposited: $1200.0
+Interest credited: $39.22
 ```
+
+---
+
+## 🧪 Unit Testing
+
+Basic tests are written in `BankLedgerTest.java` using **JUnit 5** to validate:
+
+- Valid deposits and withdrawals
+- Proper interest calculation
+- Handling of invalid or edge-case transactions
+
+Run tests with:
+
+```bash
+mvn test
+```
+
+---
+
+## 📁 Project Structure
+
+```
+BankLedger/
+├── README.md
+├── pom.xml
+├── .gitignore
+├── src
+│   ├── main/java/com/omar/bankledger
+│   │   ├── Account.java
+│   │   ├── Savings.java
+│   │   └── Driver.java
+│   └── test/java/com/omar/bankledger
+│       └── BankLedgerTest.java
+```
+
+---
+
+## 🚀 Future Enhancements
+
+- ⏳ Time-based interest compounding
+- 🧾 CSV export for statements
+- 🖥️ GUI interface with JavaFX or Swing
+- 🏦 Support for multiple or joint accounts
+
+---
+
+## 👨‍💻 Contact
+
+*Built with ❤️ by Omar Hernandez*
+
+📧 Email: [`ohern@bu.edu`](mailto:ohern@bu.edu)
+🐙 GitHub: [@oohmxi](https://github.com/oohmxi)
+🔗 LinkedIn: [linkedin.com/in/omarhlink](https://www.linkedin.com/in/omarhlink/)
