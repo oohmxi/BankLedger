@@ -1,0 +1,14 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "type": "java",
+        "name": "▶️ Run BankLedger Driver",
+        "request": "launch",
+        "mainClass": "com.omar.bankledger.Driver",
+        "projectName": "BankLedger",
+        "cwd": "${workspaceFolder}/src"
+      }
+    ]
+  }
+  

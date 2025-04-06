@@ -1,3 +1,4 @@
+
 # 🏦 BankLedger
 
 A Java-based banking simulation project that demonstrates object-oriented programming principles such as encapsulation, inheritance, and polymorphism.
@@ -23,4 +24,34 @@ A Java-based banking simulation project that demonstrates object-oriented progra
 ```bash
 javac Account.java Savings.java Driver.java
 java Driver
+```
+
+## 🔎 Example Output
+
+```text
+=== Final Account Summary ===
+
+Account Owner: Alice Customer  
+Account Number: 10001  
+Account Balance: $7258.83  
+
+Transaction History:  
+Account created with balance: $6922.83  
+Deposited: $461.0  
+Withdrew: $125.0  
+
+-----------------------------
+
+Account Owner: Bob Saver  
+Account Number: 10002  
+Account Balance: $3076.22  
+Interest Rate: 1.15%  
+Total Interest Earned: $39.22  
+
+Transaction History:  
+Account created with balance: $1328.0  
+Deposited: $881.0  
+Withdrew: $341.0  
+Deposited: $1200.0  
+Interest credited: $39.22  
 ```
