@@ -2,29 +2,85 @@
 *.class               # Compiled bytecode
 *.jar                 # Java archives
 *.war                 # Web archives
+*.nar                 # Java archives
+*.ear                 # Enterprise application archive
+*.zip                 # Zip archives
+*.tar.gz              # Compressed archives
+*.rar                 # Compressed archives
 *.log                 # Log files
 *.ctxt                # Java test context
+hs_err_pid*           # JVM crash logs
+replay_pid*           # JVM replay logs
+.mtj.tmp/             # Mobile Tools for Java (J2ME)
+
+# === Maven ===
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
 
 # === IDEs and Editors ===
-.vscode/              # VS Code settings
-.idea/                # IntelliJ IDEA
-*.iml                 # IntelliJ project module file
-.DS_Store             # macOS directory settings
-Thumbs.db             # Windows thumbnail cache
+# VS Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/java-formatter.xml
+*.code-workspace
 
-# === Build Directories ===
-bin/                  # Build output
+# IntelliJ IDEA
+.idea/
+*.iml                 # IntelliJ project module file
+*.iws
+*.ipr
+out/                  # IntelliJ output
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# NetBeans
+nbproject/private/
 build/                # Generic build directory
-out/                  # IntelliJ or other tools
+nbbuild/
+dist/
+nbdist/
+nbactions.xml
+nb-configuration.xml
 
 # === OS-generated ===
-*.swp                 # Vim swap files
-*.tmp                 # Temp files
-*~                   # Editor backups
+# macOS
+.DS_Store             # macOS directory settings
+.AppleDouble
+.LSOverride
+Icon
+._*
+
+# Windows
+Thumbs.db             # Windows thumbnail cache
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~                    # Editor backups
+.directory
+.Trash-*
 
 # === Environment or Local Tools ===
 .env                  # Environment variables (if you add any)
 .gradle               # Gradle build cache
 
+# === Build Directories ===
+bin/                  # Build output
 
-src
+# === Other ===
+*.swp                 # Vim swap files
