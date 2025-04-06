@@ -1,4 +1,3 @@
-
 # 🏦 BankLedger
 
 A Java-based banking simulation project that demonstrates object-oriented programming principles such as encapsulation, inheritance, and polymorphism.
@@ -18,6 +17,53 @@ A Java-based banking simulation project that demonstrates object-oriented progra
 - Modular class design using inheritance
 - Simulates deposits, withdrawals, and balance updates
 - Console input/output interaction
+
+
+## 📊 Class Diagram
+
+The project follows this object-oriented structure:
+
+```mermaid
+classDiagram
+    class BankAccount {
+        <<interface>>
+        +deposit(amount) void
+        +withdraw(amount) void
+        +getBalance() double
+    }
+  
+    class Account {
+        -balance: double
+        -accountNumber: int
+        -owner: String
+        -transactionHistory: List
+        +Account(owner, accountNumber, initialBalance)
+        +deposit(amount) void
+        +withdraw(amount) void
+        +getBalance() double
+        +getAccountInfo() String
+    }
+  
+    class Savings {
+        -interestRate: double
+        -totalInterestEarned: double
+        +Savings(owner, accountNumber, initialBalance, interestRate)
+        +addInterest() void
+        +getInterestRate() double
+        +getTotalInterestEarned() double
+    }
+  
+    class Driver {
+        +main(args) void
+    }
+  
+    BankAccount <|.. Account : implements
+    Account <|-- Savings : extends
+    Driver ..> Account : uses
+    Driver ..> Savings : uses
+```
+
+
 
 ## 🧪 Compile & Run (Java 17)
 
