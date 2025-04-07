@@ -1,61 +1,61 @@
-# 🏦 BankLedger
+# BankLedger
 
 A clean, object-oriented Java banking simulator that mirrors real-world financial behavior through **depositing, withdrawing, and earning interest**. Designed for clarity, modularity, and professional demonstration.
 
 ---
 
-## 📌 Overview
+## Overview
 
-- **Author:** Omar Hernandez  
-- **Date:** December 8th, 2024  
+- **Author:** Omar Hernandez
+- **Date:** December 8th, 2024
 - **Language:** Java 17 (Maven-based project)
 
 BankLedger simulates **basic checking and savings accounts**, showcasing practical software engineering techniques such as:
 
-- Encapsulation of financial data  
-- Inheritance through a `Savings` account subclass  
-- Transaction logging and balance tracking  
+- Encapsulation of financial data
+- Inheritance through a `Savings` account subclass
+- Transaction logging and balance tracking
 
 ---
 
-## 💸 Financial Analogy
+## Financial Analogy
 
 Imagine two real clients at a bank:
 
-- **Alex Developer** has a standard checking account.  
-- **Jordan Engineer** uses a savings account that earns interest.  
+- **Alex Developer** has a standard checking account.
+- **Jordan Engineer** uses a savings account that earns interest.
 
 This program tracks their financial activities:
 
-- Deposits and withdrawals  
-- Account summaries  
-- Interest earned over time (only for savings)  
+- Deposits and withdrawals
+- Account summaries
+- Interest earned over time (only for savings)
 
 Think of it as **a digital ledger**, but built in Java.
 
 ---
 
-## 💡 Core Features
+## Core Features
 
-- ✅ **Modular OOP Design:** Separate classes for account types  
-- ✅ **Live Ledger History:** Tracks every transaction  
-- ✅ **Interest Engine:** Automatically computes & applies savings interest  
-- ✅ **Readable CLI Output:** Clear summary and history for each user  
+- **Modular OOP Design:** Separate classes for account types
+- **Live Ledger History:** Tracks every transaction
+- **Interest Engine:** Automatically computes & applies savings interest
+- **Readable CLI Output:** Clear summary and history for each user
 
 ---
 
-## 📊 Architecture Diagram (UML)
+## Architecture Diagram (UML)
 
-> 📱 **Mobile Friendly:** Embedded as image instead of Mermaid for full compatibility  
+> **Mobile Friendly:** Embedded as image instead of Mermaid for full compatibility
 > 📂 `./bankledger.png`
 
 ![BankLedger UML Diagram](./bankledger.png)
 
 ---
 
-## 🧪 Compile & Run
+## Compile & Run
 
-### ▶️ Run via Maven
+### Run via Maven
 
 ```bash
 mvn compile
@@ -71,7 +71,7 @@ java -cp src/main/java com.omar.bankledger.Driver
 
 ---
 
-## 🔍 Sample Output
+## Sample Output
 
 ```
 === Final Account Summary ===
@@ -104,15 +104,15 @@ Interest credited: $35.28
 
 ---
 
-## 🧪 Unit Testing
+## Unit Testing
 
 Basic tests are written in `BankLedgerTest.java` using **JUnit 5** to validate:
 
-- ✅ Valid deposits and withdrawals  
-- ✅ Proper interest calculation  
-- ✅ Handling of invalid or edge-case transactions  
+- Valid deposits and withdrawals
+- Proper interest calculation
+- Handling of invalid or edge-case transactions
 
-### ▶️ Run Tests
+### Run Tests
 
 ```bash
 mvn test
@@ -120,7 +120,7 @@ mvn test
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 BankLedger/
@@ -152,19 +152,28 @@ BankLedger/
 
 ---
 
-## 🚀 Future Enhancements
+## Future Enhancements
 
-- ⏳ Time-based interest compounding  
-- 🧾 CSV export for statements  
-- 🖥️ GUI interface with JavaFX or Swing  
-- 🏦 Support for multiple or joint accounts  
+- Time-based interest compounding
+- CSV export for statements
+- GUI interface with JavaFX or Swing
+- Support for multiple or joint accounts
 
 ---
 
-## 👨‍💻 Contact
 
-*Built with ❤️ by Omar Hernandez*
+## Contact
 
-📧 Email: [`ohern@bu.edu`](mailto:ohern@bu.edu)  
-🐙 GitHub: [@oohmxi](https://github.com/oohmxi)  
-🔗 LinkedIn: [linkedin.com/in/omarhlink](https://www.linkedin.com/in/omarhlink/)
+<p align="center">
+  <a href="mailto:ohern@bu.edu">
+    <img src="https://img.shields.io/badge/Email-ohern@bu.edu-D14836?style=flat-square&logo=gmail&logoColor=white" alt="Email Badge"/>
+  </a>
+  <a href="https://github.com/oohmxi">
+    <img src="https://img.shields.io/badge/GitHub-oohmxi-181717?style=flat-square&logo=github" alt="GitHub Badge"/>
+  </a>
+  <a href="https://linkedin.com/in/omarhlink">
+    <img src="https://img.shields.io/badge/LinkedIn-omarhlink-0077B5?style=flat-square&logo=linkedin" alt="LinkedIn Badge"/>
+  </a>
+</p>
+
+<p align="center"><em>Built with ❤️ by Omar Hernandez</em></p>
