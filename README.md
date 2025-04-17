@@ -4,6 +4,9 @@ A clean, object-oriented Java banking simulator that mirrors real-world financia
 
 ---
 
+![version](https://img.shields.io/badge/version-v1.0.0-blue)
+![status](https://img.shields.io/badge/status-production--ready-brightgreen)
+
 ## Overview
 
 - **Author:** Omar Hernandez
@@ -161,7 +164,6 @@ BankLedger/
 
 ---
 
-
 ## Contact
 
 <table align="center">
@@ -184,4 +186,4 @@ BankLedger/
   </tr>
 </table>
 
-<p align="center"><em>Built with ❤️ by Omar Hernandez</em></p>
+<p align="center"><em>Where object-oriented design meets financial literacy.</em></p> <p align="center"><strong> © oohmxi Technologies, Inc.</strong></p>
