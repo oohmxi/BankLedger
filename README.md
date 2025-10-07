@@ -4,7 +4,7 @@
 A clean, object-oriented Java banking simulator that mirrors real-world financial behavior through **depositing, withdrawing, and earning interest**. Designed for clarity, modularity, and professional demonstration.
 ---
 ![version](https://img.shields.io/badge/version-v1.0.0-blue)
-![status](https://img.shields.io/badge/status-production--ready-brightgreen)
+![status](https://img.shields.io/badge/status-demo-brightgreen)
 
 ## Overview
 
@@ -191,4 +191,4 @@ BankLedger/
 </table>
 
 <p align="center"><em>Where object-oriented design meets financial literacy.</em></p> 
-<p align="center"><strong> © oohmxi </strong></p>
+<p align="center"><strong> © 2025 oohmxi </strong></p>
