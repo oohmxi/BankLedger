@@ -191,6 +191,4 @@ BankLedger/
 </table>
 
 <p align="center"><em>Where object-oriented design meets financial literacy.</em></p> 
-<p align="center"><strong> © oohmxi .</strong></p>
-
-~
+<p align="center"><strong> © oohmxi </strong></p>
