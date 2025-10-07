@@ -1,9 +1,8 @@
+---
 # BankLedger
 
 A clean, object-oriented Java banking simulator that mirrors real-world financial behavior through **depositing, withdrawing, and earning interest**. Designed for clarity, modularity, and professional demonstration.
-
 ---
-
 ![version](https://img.shields.io/badge/version-v1.0.0-blue)
 ![status](https://img.shields.io/badge/status-production--ready-brightgreen)
 
@@ -18,6 +17,7 @@ BankLedger simulates **basic checking and savings accounts**, showcasing practic
 - Encapsulation of financial data
 - Inheritance through a `Savings` account subclass
 - Transaction logging and balance tracking
+- Interface-driven architecture for extensibility
 
 ---
 
@@ -25,8 +25,8 @@ BankLedger simulates **basic checking and savings accounts**, showcasing practic
 
 Imagine two real clients at a bank:
 
-- **Alex Developer** has a standard checking account.
-- **Jordan Engineer** uses a savings account that earns interest.
+- **Cosimo Medici** has a standard checking account.
+- **Lorenzo il Magnifico** uses a savings account that earns interest.
 
 This program tracks their financial activities:
 
@@ -34,13 +34,13 @@ This program tracks their financial activities:
 - Account summaries
 - Interest earned over time (only for savings)
 
-Think of it as **a digital ledger**, but built in Java.
+Think of it as **a digital ledger**, inspired by Renaissance finance and built in Java.
 
 ---
 
 ## Core Features
 
-- **Modular OOP Design:** Separate classes for account types
+- **Modular OOP Design:** Interface + inheritance structure
 - **Live Ledger History:** Tracks every transaction
 - **Interest Engine:** Automatically computes & applies savings interest
 - **Readable CLI Output:** Clear summary and history for each user
@@ -54,7 +54,10 @@ Think of it as **a digital ledger**, but built in Java.
 
 ![BankLedger UML Diagram](./bankledger.png)
 
+> **Note:** UML diagram includes interface `BankAccount` which is not yet implemented in v1.0 CLI version but planned for v2.0 API integration.
+
 ---
+
 
 ## Compile & Run
 
@@ -79,30 +82,29 @@ java -cp src/main/java com.omar.bankledger.Driver
 ```
 === Final Account Summary ===
 
-Account Owner: Alex Developer
+Account Owner: Cosimo Medici
 Account Number: 1001
 Account Balance: $7258.83
 
 Transaction History:
 Account created with balance: $6922.83
-Deposited: $461.0
-Withdrew: $125.0
+Deposited: $461.00
+Withdrew: $125.00
 
 -----------------------------
 
-Account Owner: Jordan Engineer
+Account Owner: Lorenzo il Magnifico
 Account Number: 2002
 Account Balance: $3103.28
 Interest Rate: 1.15%
 Total Interest Earned: $35.28
 
 Transaction History:
-Account created with balance: $1328.0
-Deposited: $881.0
-Withdrew: $341.0
-Deposited: $1200.0
-Deposited: $35.282
-Interest credited: $35.28
+Account created with balance: $1328.00
+Deposited: $881.00
+Withdrew: $341.00
+Deposited: $1200.00
+Interest credited at 1.15%: $35.28
 ```
 
 ---
@@ -161,6 +163,8 @@ BankLedger/
 - CSV export for statements
 - GUI interface with JavaFX or Swing
 - Support for multiple or joint accounts
+- REST API with PostgreSQL (v2.0)
+- Historical simulations with real Medici data
 
 ---
 
@@ -169,7 +173,7 @@ BankLedger/
 <table align="center">
   <tr>
     <td>
-      <a href="mailto:ohern@bu.edu">
+      <a href="mailto:ohfreelancing@gmail.com">
         <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email Badge">
       </a>
     </td>
@@ -186,4 +190,7 @@ BankLedger/
   </tr>
 </table>
 
-<p align="center"><em>Where object-oriented design meets financial literacy.</em></p> <p align="center"><strong> © oohmxi Technologies, Inc.</strong></p>
+<p align="center"><em>Where object-oriented design meets financial literacy.</em></p> 
+<p align="center"><strong> © oohmxi .</strong></p>
+
+~
